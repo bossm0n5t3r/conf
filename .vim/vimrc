@@ -1,0 +1,25 @@
+set nocompatible
+syntax enable           " enable syntax processing
+let g:solarized_termcolors=256
+set background=dark     " set background dark
+filetype indent on
+set path+=**
+set wildmenu			" visual autocomplete for command menu
+set tabstop=4			" number of visual spaces per TAB
+set softtabstop=4       " number of spaces in tab when editing
+set shiftwidth=4        " number of spaces in tab when auto indenting
+set expandtab			" tabs are spaces
+set number				" show line numbers
+set autoindent			" auto indent
+set cindent             " c indent
+set showmatch			" highlighting matching [{()}]
+set incsearch			" search as characters are entered
+set hlsearch			" highlight matches
+set cursorline          " highlight current line
+
+filetype plugin on
+call plug#begin('~/.vim/plugged')
+
+Plug 'altercation/vim-colors-solarized'
+
+call plug#end()
