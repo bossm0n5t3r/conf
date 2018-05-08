@@ -1,6 +1,9 @@
 set nocompatible
 syntax enable           " enable syntax processing
-set background=dark     " set background dark
+set t_Co=256
+set t_ut=
+colorscheme codedark
+let g:airline_theme = 'codedark'
 filetype indent on
 set path+=**
 set wildmenu			" visual autocomplete for command menu
