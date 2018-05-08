@@ -1,6 +1,5 @@
 set nocompatible
 syntax enable           " enable syntax processing
-let g:solarized_termcolors=256
 set background=dark     " set background dark
 filetype indent on
 set path+=**
@@ -20,7 +19,6 @@ set cursorline          " highlight current line
 filetype plugin on
 call plug#begin('~/.vim/plugged')
 
-Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdtree'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
