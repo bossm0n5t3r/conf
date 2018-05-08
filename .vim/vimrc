@@ -1,23 +1,36 @@
 set nocompatible
-syntax enable           " enable syntax processing
+" enable syntax processing
+syntax enable
 set t_Co=256
 set t_ut=
 colorscheme codedark
 let g:airline_theme = 'codedark'
 filetype indent on
 set path+=**
-set wildmenu			" visual autocomplete for command menu
-set tabstop=4			" number of visual spaces per TAB
-set softtabstop=4       " number of spaces in tab when editing
-set shiftwidth=4        " number of spaces in tab when auto indenting
-set expandtab			" tabs are spaces
-set number				" show line numbers
-set autoindent			" auto indent
-set cindent             " c indent
-set showmatch			" highlighting matching [{()}]
-set incsearch			" search as characters are entered
-set hlsearch			" highlight matches
-set cursorline          " highlight current line
+" visual autocomplete for command menu
+set wildmenu
+" number of visual spaces per TAB
+set tabstop=4
+" number of spaces in tab when editing
+set softtabstop=4
+" number of spaces in tab when auto indenting
+set shiftwidth=4
+" tabs are spaces
+set expandtab
+" show line numbers
+set number
+" auto indent
+set autoindent
+" c indent
+set cindent
+" highlighting matching [{()}]
+set showmatch
+" search as characters are entered
+set incsearch
+" highlight matches
+set hlsearch
+" highlight current line
+set cursorline
 
 " Enhanced keyboard mappings
 "
