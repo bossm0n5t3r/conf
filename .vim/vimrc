@@ -1,0 +1,50 @@
+set nocompatible
+syntax enable           " enable syntax processing
+set t_Co=256
+set t_ut=
+colorscheme codedark
+let g:airline_theme = 'codedark'
+filetype indent on
+set path+=**
+set wildmenu			" visual autocomplete for command menu
+set tabstop=4			" number of visual spaces per TAB
+set softtabstop=4       " number of spaces in tab when editing
+set shiftwidth=4        " number of spaces in tab when auto indenting
+set expandtab			" tabs are spaces
+set number				" show line numbers
+set autoindent			" auto indent
+set cindent             " c indent
+set showmatch			" highlighting matching [{()}]
+set incsearch			" search as characters are entered
+set hlsearch			" highlight matches
+set cursorline          " highlight current line
+
+" Enhanced keyboard mappings
+"
+" in normal mode F2 will save the file
+nmap <F2> :w<CR>
+" in insert mode F2 will exit insert, save, enters insert again
+imap <F2> <ESC>:w<CR>i
+" in normal mode F3 will save and exit the file
+nmap <F3> :wq<CR>
+" in insert mode F3 will exit insert, save and exit
+imap <F3> <ESC>:wq<CR>
+" in normal mode F5 will work NERDTree Toggle
+nmap <F5> :NERDTreeToggle<CR>
+
+" vim-plug settings
+nmap <F6> :PlugInstall<CR>
+nmap <F7> :PlugUpdate<CR>
+nmap <F8> :PlugClean<CR>
+nmap <F9> :PlugUpgrade<CR>
+
+filetype plugin on
+call plug#begin('~/.vim/plugged')
+
+Plug 'tomasiser/vim-code-dark'
+Plug 'scrooloose/nerdtree'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+call plug#end()
+
