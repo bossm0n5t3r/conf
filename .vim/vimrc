@@ -25,6 +25,10 @@ colorscheme codedark
 let g:airline_theme = 'codedark'
 
 " BASIC SETTINGS
+
+let mapleader       =','
+let maplocalleader  =','
+
 filetype plugin on
 filetype indent on
 set nocompatible
@@ -46,6 +50,12 @@ set laststatus=2
 set backspace=indent,eol,start
 set encoding=utf-8
 set mouse=a
+
+" MAPPINGS
+
+" Open new line below and above current line
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
 
 " Enhanced keyboard mappings
 "
