@@ -61,8 +61,8 @@ nnoremap <leader>O O<ESC>
 "
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
-" in insert mode F2 will exit insert, save, enters insert again
-imap <F2> <ESC>:w<CR>i
+" in insert mode F2 will exit insert, save the file
+imap <F2> <ESC>:w<CR>
 " in normal mode F3 will save and exit the file
 nmap <F3> :wq<CR>
 " in insert mode F3 will exit insert, save and exit
