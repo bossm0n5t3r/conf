@@ -94,9 +94,3 @@ nmap <F4> :Goyo<CR>
 
 " NERDTree Toggle
 nmap <F5> :NERDTreeToggle<CR>
-
-" vim-plug settings
-nmap <F6> :PlugInstall<CR>
-nmap <F7> :PlugUpdate<CR>
-nmap <F8> :PlugClean<CR>
-nmap <F9> :PlugUpgrade<CR>
