@@ -82,6 +82,7 @@ let g:UltiSnipsEditSplit="vertical"
 " Color SETTINGS
 set t_Co=256
 set t_ut=
+let g:codedark_conservative = 1
 colorscheme codedark
 let g:airline_theme = 'codedark'
 
