@@ -21,6 +21,7 @@ Plug 'honza/vim-snippets'
 
 " Colors
 Plug 'tomasiser/vim-code-dark'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -80,11 +81,10 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
 
 " Color SETTINGS
-set t_Co=256
-set t_ut=
-let g:codedark_conservative = 1
-colorscheme codedark
-let g:airline_theme = 'codedark'
+
+syntax on
+colorscheme dracula
+let g:airline_theme = 'dracula'
 
 " BASIC SETTINGS
 
@@ -94,7 +94,6 @@ let maplocalleader  =','
 filetype plugin on
 filetype indent on
 set nocompatible
-syntax enable
 set path+=**
 set wildmenu
 set tabstop=4
