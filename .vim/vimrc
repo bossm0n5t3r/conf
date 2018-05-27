@@ -1,10 +1,15 @@
+" =========================================================================
 " .vimrc
+" =========================================================================
 
 " Vim 8 defaults
 unlet! skip_defaults_vim
 silent! source $VIMRUNTIME/defaults.vim
 
-" Plugin SETTINGS
+" =========================================================================
+"  VIM-PLUG
+" =========================================================================
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'jiangmiao/auto-pairs'
@@ -25,9 +30,15 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
+" =========================================================================
+" Plugin SETTINGS
+" =========================================================================
+
 " Indentline
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
+
+" -------------------------------------------------------------------------
 
 " NERD Commenter settings
 "
@@ -46,6 +57,8 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
+" -------------------------------------------------------------------------
+
 " Syntastic
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -55,8 +68,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" -------------------------------------------------------------------------
+
 " vim-multiple-cursors
-"
+
 let g:multi_cursor_use_default_mapping=0
 " Default mapping
 let g:multi_cursor_start_word_key      = '<C-n>'
@@ -68,8 +83,12 @@ let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
 
+" -------------------------------------------------------------------------
+
 " vim-airline settings
 let g:airline#extensions#tabline#enabled = 1
+
+" -------------------------------------------------------------------------
 
 " Ultisnips
 "
@@ -80,19 +99,15 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window
 let g:UltiSnipsEditSplit="vertical"
 
-" Color SETTINGS
-
-syntax on
-colorscheme dracula
-let g:airline_theme = 'dracula'
-
+" =========================================================================
 " BASIC SETTINGS
+" =========================================================================
 
 let mapleader       =','
 let maplocalleader  =','
 
-filetype plugin on
-filetype indent on
+" -------------------------------------------------------------------------
+
 set nocompatible
 set path+=**
 set wildmenu
@@ -112,11 +127,15 @@ set backspace=indent,eol,start
 set encoding=utf-8
 set mouse=a
 
+" =========================================================================
 " MAPPINGS
-"
+" =========================================================================
+
 " Open new line below and above current line
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
+
+" -------------------------------------------------------------------------
 
 " Enhanced keyboard mappings
 "
@@ -129,12 +148,40 @@ nmap <F3> :wq<CR>
 " in insert mode F3 will exit insert, save and exit
 imap <F3> <ESC>:wq<CR>
 
+" -------------------------------------------------------------------------
+
 " Goyo
 nmap <F4> :Goyo<CR>
+
+" -------------------------------------------------------------------------
 
 " NERDTree Toggle
 nmap <F5> :NERDTreeToggle<CR>
 
+" -------------------------------------------------------------------------
+
 " vim-plug
-nmap <F8> :PlugClean<CR>
-nmap <F9> :PlugUpdate<CR>
+nmap <F6> :PlugClean<CR>
+nmap <F7> :PlugUpdate<CR>
+
+" -------------------------------------------------------------------------
+" <F8> | Color scheme selector
+" -------------------------------------------------------------------------
+function! s:colors(...)
+  return filter(map(filter(split(globpath(&rtp, 'colors/*.vim'), "\n"),
+        \                  'v:val !~ "^/usr/"'),
+        \           'fnamemodify(v:val, ":t:r")'),
+        \       '!a:0 || stridx(v:val, a:1) >= 0')
+endfunction
+
+function! s:rotate_colors()
+  if !exists('s:colors')
+    let s:colors = s:colors()
+  endif
+  let name = remove(s:colors, 0)
+  call add(s:colors, name)
+  execute 'colorscheme' name
+  redraw
+  echo name
+endfunction
+nnoremap <silent> <F8> :call <SID>rotate_colors()<cr>
