@@ -25,8 +25,8 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'honza/vim-snippets'
 
 " Colors
+Plug 'nanotech/jellybeans.vim'
 Plug 'tomasiser/vim-code-dark'
-Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
@@ -98,6 +98,18 @@ let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window
 let g:UltiSnipsEditSplit="vertical"
+
+" -------------------------------------------------------------------------
+
+" jellybeans
+
+let g:jellybeans_overrides = {
+\    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
+\              'ctermfg': 'Black', 'ctermbg': 'Yellow',
+\              'attr': 'bold' },
+\    'Comment': { 'guifg': 'cccccc' },
+\    'background': { 'guibg': '000000' },
+\}
 
 " =========================================================================
 " BASIC SETTINGS
