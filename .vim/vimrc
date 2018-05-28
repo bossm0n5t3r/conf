@@ -3,6 +3,7 @@
 " =========================================================================
 
 " Vim 8 defaults
+
 unlet! skip_defaults_vim
 silent! source $VIMRUNTIME/defaults.vim
 
@@ -12,12 +13,12 @@ silent! source $VIMRUNTIME/defaults.vim
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'w0rp/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentline'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/syntastic'
 Plug 'sirver/ultisnips'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -34,13 +35,14 @@ call plug#end()
 " =========================================================================
 
 " Indentline
+
 let g:indentLine_leadingSpaceEnabled = 1
 let g:indentLine_leadingSpaceChar = '·'
 
 " -------------------------------------------------------------------------
 
 " NERD Commenter settings
-"
+
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 " Use compact syntax for prettified multi-line comments
@@ -55,6 +57,36 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+" -------------------------------------------------------------------------
+
+" Syntastic
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" -------------------------------------------------------------------------
+
+" Ultisnips
+
+" Trigger configuration
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+" If you want :UltiSnipsEdit to split your window
+let g:UltiSnipsEditSplit="vertical"
+
+" -------------------------------------------------------------------------
+
+" vim-airline settings
+
+let g:airline#extensions#tabline#enabled = 1
 
 " -------------------------------------------------------------------------
 
@@ -73,23 +105,7 @@ let g:multi_cursor_quit_key            = '<Esc>'
 
 " -------------------------------------------------------------------------
 
-" vim-airline settings
-let g:airline#extensions#tabline#enabled = 1
-
-" -------------------------------------------------------------------------
-
-" Ultisnips
-"
-" Trigger configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-" If you want :UltiSnipsEdit to split your window
-let g:UltiSnipsEditSplit="vertical"
-
-" -------------------------------------------------------------------------
-
-" jellybeans
+" Jellybeans
 
 let g:jellybeans_overrides = {
 \    'Todo': { 'guifg': '303030', 'guibg': 'f0f000',
@@ -98,6 +114,7 @@ let g:jellybeans_overrides = {
 \    'Comment': { 'guifg': 'cccccc' },
 \    'background': { 'guibg': '000000' },
 \}
+
 colorscheme jellybeans
 
 " =========================================================================
@@ -133,13 +150,14 @@ set mouse=a
 " =========================================================================
 
 " Open new line below and above current line
+
 nnoremap <leader>o o<ESC>
 nnoremap <leader>O O<ESC>
 
 " -------------------------------------------------------------------------
 
 " Enhanced keyboard mappings
-"
+
 " in normal mode F2 will save the file
 nmap <F2> :w<CR>
 " in insert mode F2 will exit insert, save the file
@@ -152,22 +170,26 @@ imap <F3> <ESC>:wq<CR>
 " -------------------------------------------------------------------------
 
 " Goyo
+
 nmap <F4> :Goyo<CR>
 
 " -------------------------------------------------------------------------
 
 " NERDTree Toggle
+
 nmap <F5> :NERDTreeToggle<CR>
 
 " -------------------------------------------------------------------------
 
 " vim-plug
+
 nmap <F6> :PlugClean<CR>
 nmap <F7> :PlugUpdate<CR>
 
 " -------------------------------------------------------------------------
 " <F8> | Color scheme selector
 " -------------------------------------------------------------------------
+
 function! s:colors(...)
   return filter(map(filter(split(globpath(&rtp, 'colors/*.vim'), "\n"),
         \                  'v:val !~ "^/usr/"'),
@@ -185,4 +207,5 @@ function! s:rotate_colors()
   redraw
   echo name
 endfunction
+
 nnoremap <silent> <F8> :call <SID>rotate_colors()<cr>
