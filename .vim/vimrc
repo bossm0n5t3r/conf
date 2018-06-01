@@ -11,7 +11,7 @@ silent! source $VIMRUNTIME/defaults.vim
 "  VIM-PLUG
 " =========================================================================
 
-call plug#begin('~/.vim/plugged')
+silent! if plug#begin('~/.vim/plugged')
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
@@ -29,6 +29,7 @@ Plug 'honza/vim-snippets'
 Plug 'nanotech/jellybeans.vim'
 
 call plug#end()
+endif
 
 " =========================================================================
 " Plugin SETTINGS
