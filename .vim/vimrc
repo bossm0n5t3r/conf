@@ -157,6 +157,14 @@ nnoremap <leader>O O<ESC>
 
 " -------------------------------------------------------------------------
 
+" Buffers
+
+nnoremap ]b :bnext<CR>
+nnoremap [b :bprev<CR>
+nnoremap <silent> <leader><Enter>  :buffers<CR>:buffer<Space>
+
+" -------------------------------------------------------------------------
+
 " Enhanced keyboard mappings
 
 " in normal mode F2 will save the file
