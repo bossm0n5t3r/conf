@@ -162,6 +162,7 @@ nnoremap <leader>O O<ESC>
 nnoremap ]b :bnext<CR>
 nnoremap [b :bprev<CR>
 nnoremap <silent> <leader><Enter>  :buffers<CR>:buffer<Space>
+nnoremap <leader>e :edit<Space>
 
 " -------------------------------------------------------------------------
 
