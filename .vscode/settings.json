@@ -1,0 +1,7 @@
+{
+    // Controls the font size in pixels.
+    "editor.fontSize": 15,
+
+    // Controls the font family.
+    "editor.fontFamily": "'D2Coding'",
+}
