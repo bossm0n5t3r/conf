@@ -1,19 +1,2 @@
 {
-    // Controls the font size in pixels.
-    "editor.fontSize": 15,
-
-    // Controls the font family.
-    "editor.fontFamily": "'D2Coding'",
-
-    // Whether to clear previous output before each run.
-    "code-runner.clearPreviousOutput": true,
-
-    // Set the executor of each language.
-    "code-runner.executorMap": {
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-        "python": "python",
-    },
-
-    // Whether to run code in Integrated Terminal.
-    "code-runner.runInTerminal": true,
 }
