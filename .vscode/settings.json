@@ -32,7 +32,7 @@
 
     // Specifies the severity of the message
     // when the classpath is incomplete for a Java file
-    "java.errors.incompleteClasspath.severity": "info",
+    "java.errors.incompleteClasspath.severity": "ignore",
 
     // -------------------------------------------
     // Run Code configuration
