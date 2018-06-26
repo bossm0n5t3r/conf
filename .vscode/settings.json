@@ -1,0 +1,52 @@
+{
+    // -------------------------------------------
+    // Editor
+    // -------------------------------------------
+    
+    // Controls the font family.
+    "editor.fontFamily": "'D2Coding'",
+
+    // Controls the font size in pixels.
+    "editor.fontSize": 17,
+
+    // -------------------------------------------
+    // Workbench
+    // -------------------------------------------
+
+    // Controls which editor is shown at startup,
+    // if none is restored from the previous session.
+    // Select 'none' to start without an editor,
+    // 'welcomePage' to open the Welcome page (default),
+    // 'newUntitledFile' to open a new untitled file
+    // (only opening an empty workspace).
+    "workbench.startupEditor": "newUntitledFile",
+
+    // -------------------------------------------
+    // Java configuration
+    // -------------------------------------------
+
+    // Specifies the folder path to the JDK (8 or more recent) used to launch the Java Language Server.
+    // On Windows, backslashes must be escaped, i.e.
+    // "java.home":"C:\\Program Files\\Java\\jdk1.8.0_161"
+    "java.home": "/usr/lib/jvm/java-8-openjdk",
+
+    // Specifies the severity of the message
+    // when the classpath is incomplete for a Java file
+    "java.errors.incompleteClasspath.severity": "info",
+
+    // -------------------------------------------
+    // Run Code configuration
+    // -------------------------------------------
+
+    // Whether to clear previous output before each run.
+    "code-runner.clearPreviousOutput": true,
+
+    // Set the executor of each language.
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "python": "python",
+    },
+
+    // Whether to run code in Integrated Terminal.
+    "code-runner.runInTerminal": true,
+}
