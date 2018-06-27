@@ -25,14 +25,8 @@
     // Java configuration
     // -------------------------------------------
 
-    // Specifies the folder path to the JDK (8 or more recent) used to launch the Java Language Server.
-    // On Windows, backslashes must be escaped, i.e.
-    // "java.home":"C:\\Program Files\\Java\\jdk1.8.0_161"
+    // Installation directory of Java 8
     "java.home": "/usr/lib/jvm/java-8-openjdk",
-
-    // Specifies the severity of the message
-    // when the classpath is incomplete for a Java file
-    "java.errors.incompleteClasspath.severity": "ignore",
 
     // -------------------------------------------
     // Run Code configuration
@@ -49,4 +43,7 @@
 
     // Whether to run code in Integrated Terminal.
     "code-runner.runInTerminal": true,
+
+    // Whether to save the current file before running.
+    "code-runner.saveFileBeforeRun": true,
 }
