@@ -22,6 +22,16 @@
     "workbench.startupEditor": "newUntitledFile",
 
     // -------------------------------------------
+    // Power Mode
+    // -------------------------------------------
+
+    // Enable to activate POWER MODE!!!
+    "powermode.enabled": true,
+
+    // Set to false to disable shaking while typing
+    "powermode.enableShake": false,
+
+    // -------------------------------------------
     // Java configuration
     // -------------------------------------------
 
