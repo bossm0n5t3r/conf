@@ -22,6 +22,14 @@
     "workbench.startupEditor": "newUntitledFile",
 
     // -------------------------------------------
+    // Extensions
+    // -------------------------------------------
+
+    // If set to true, recommendations will not be fetched
+    // or shown unless specifically requested by the user.
+    "extensions.showRecommendationsOnlyOnDemand": true,
+
+    // -------------------------------------------
     // Power Mode
     // -------------------------------------------
 
