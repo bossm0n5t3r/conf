@@ -2,7 +2,7 @@
     // -------------------------------------------
     // Editor
     // -------------------------------------------
-    
+
     // Controls the font family.
     "editor.fontFamily": "'D2Coding'",
 
@@ -38,7 +38,7 @@
 
     // Set to false to disable shaking while typing
     "powermode.enableShake": false,
-    
+
     // -------------------------------------------
     // Java configuration
     // -------------------------------------------
