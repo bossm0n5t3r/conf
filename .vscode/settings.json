@@ -19,7 +19,7 @@
     // 'welcomePage' to open the Welcome page (default),
     // 'newUntitledFile' to open a new untitled file
     // (only opening an empty workspace).
-    "workbench.startupEditor": "newUntitledFile",
+    "workbench.startupEditor": "none",
 
     // -------------------------------------------
     // Extensions
