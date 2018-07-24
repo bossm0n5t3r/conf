@@ -202,11 +202,9 @@ nmap <F7> :PlugUpdate<CR>
 " Syntastic
 
 " Close error window
-nnoremap <silent> <C-d> :lclose<CR>
+nnoremap <silent> <C-l> :lclose<CR>
 
 " -------------------------------------------------------------------------
-" Close error window
-nnoremap <silent> <C-d> :lclose<CR>
 " <F8> | Color scheme selector
 " -------------------------------------------------------------------------
 
