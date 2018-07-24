@@ -42,7 +42,7 @@ let g:indentLine_leadingSpaceChar = '·'
 
 " -------------------------------------------------------------------------
 
-" NERD Commenter settings
+" NERD Commenter
 
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
@@ -85,7 +85,7 @@ let g:UltiSnipsEditSplit="vertical"
 
 " -------------------------------------------------------------------------
 
-" vim-airline settings
+" vim-airline
 
 let g:airline#extensions#tabline#enabled = 1
 
@@ -198,6 +198,15 @@ nmap <F6> :PlugClean<CR>
 nmap <F7> :PlugUpdate<CR>
 
 " -------------------------------------------------------------------------
+
+" Syntastic
+
+" Close error window
+nnoremap <silent> <C-d> :lclose<CR>
+
+" -------------------------------------------------------------------------
+" Close error window
+nnoremap <silent> <C-d> :lclose<CR>
 " <F8> | Color scheme selector
 " -------------------------------------------------------------------------
 
