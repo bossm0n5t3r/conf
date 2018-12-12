@@ -25,8 +25,9 @@
     // Extensions
     // -------------------------------------------
 
-    // If set to true, recommendations will not be fetched
-    // or shown unless specifically requested by the user.
+    // When enabled, recommendations will not be fetched or
+    // shown unless specifically requested by the user.
+    // Some recommendations are fetched from a Microsoft online service.
     "extensions.showRecommendationsOnlyOnDemand": true,
 
     // -------------------------------------------
@@ -43,8 +44,9 @@
     // Java configuration
     // -------------------------------------------
 
-    // Installation directory of Java 8
-    "java.home": "/usr/lib/jvm/java-8-openjdk",
+    // Absolute path to your Java home directory
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_192",
+    // "java.home": "/usr/lib/jvm/java-8-openjdk",
 
     // -------------------------------------------
     // Run Code configuration
