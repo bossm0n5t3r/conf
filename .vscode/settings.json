@@ -44,6 +44,14 @@
     "powermode.enableShake": false,
 
     // -------------------------------------------
+    // Git
+    // -------------------------------------------
+
+    // When enabled, commits will automatically be fetched
+    // from the default remote of the current Git repository.
+    "git.autofetch": true,
+
+    // -------------------------------------------
     // Java configuration
     // -------------------------------------------
 
@@ -60,7 +68,7 @@
 
     // Set the executor of each language.
     "code-runner.executorMap": {
-        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
         "python": "python",
     },
 
