@@ -56,8 +56,10 @@
     // -------------------------------------------
 
     // Absolute path to your Java home directory
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_192",
-    // "java.home": "/usr/lib/jvm/java-8-openjdk",
+    // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_192",
+    // Arch Linux   - "java.home": "/usr/lib/jvm/java-8-openjdk",
+    // Ubuntu
+    "java.home": "/usr/lib/jvm/java-8-oracle",
 
     // -------------------------------------------
     // Run Code configuration
