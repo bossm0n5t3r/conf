@@ -51,6 +51,10 @@
     // from the default remote of the current Git repository.
     "git.autofetch": true,
 
+    // Confirm Sync
+    // Confirm before synchronizing git repositories
+    "git.confirmSync": false,
+
     // -------------------------------------------
     // Java configuration
     // -------------------------------------------
