@@ -65,6 +65,12 @@
     // Ubuntu
     "java.home": "/usr/lib/jvm/java-8-oracle",
 
+    // Check Project Settings Exclusions
+    // Checks if the extension-generated project settings files
+    // (.project, .classpath, .factorypath, .settings/)
+    // should be excluded from the file explorer.
+    "java.configuration.checkProjectSettingsExclusions": false,
+
     // -------------------------------------------
     // Run Code configuration
     // -------------------------------------------
