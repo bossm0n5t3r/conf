@@ -16,6 +16,8 @@
     // Workbench
     // -------------------------------------------
 
+    // Startup Editor
+    //
     // Controls which editor is shown at startup,
     // if none is restored from the previous session.
     // Select 'none' to start without an editor,
@@ -23,7 +25,12 @@
     // 'newUntitledFile' to open a new untitled file
     // (only opening an empty workspace).
     "workbench.startupEditor": "none",
-
+    
+    // Color Theme
+    //
+    // Specifies the color theme used in the workbench.
+    "workbench.colorTheme": "Material Theme Ocean High Contrast",
+    
     // -------------------------------------------
     // Extensions
     // -------------------------------------------
@@ -70,6 +77,16 @@
     // (.project, .classpath, .factorypath, .settings/)
     // should be excluded from the file explorer.
     // "java.configuration.checkProjectSettingsExclusions": false,
+
+    // -------------------------------------------
+    // Python
+    // -------------------------------------------
+
+    // Data Science: Send Selection To Interactive Window
+    //
+    // Determines if selected code in a python file will go
+    // to the terminal or the Python Interactive window when hitting shift+enter
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
 
     // -------------------------------------------
     // Run Code configuration
