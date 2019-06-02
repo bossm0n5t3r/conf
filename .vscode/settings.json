@@ -15,7 +15,7 @@
     // -------------------------------------------
     // Workbench
     // -------------------------------------------
-
+    
     // Startup Editor
     //
     // Controls which editor is shown at startup,
@@ -70,12 +70,14 @@
     // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_192",
     // Arch Linux   - "java.home": "/usr/lib/jvm/java-8-openjdk",
     // Ubuntu
+    //
     // "java.home": "/usr/lib/jvm/java-8-oracle",
 
     // Check Project Settings Exclusions
     // Checks if the extension-generated project settings files
     // (.project, .classpath, .factorypath, .settings/)
     // should be excluded from the file explorer.
+    //
     // "java.configuration.checkProjectSettingsExclusions": false,
 
     // -------------------------------------------
@@ -86,7 +88,8 @@
     //
     // Determines if selected code in a python file will go
     // to the terminal or the Python Interactive window when hitting shift+enter
-    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    //
+    // "python.dataScience.sendSelectionToInteractiveWindow": true,
 
     // -------------------------------------------
     // Run Code configuration
