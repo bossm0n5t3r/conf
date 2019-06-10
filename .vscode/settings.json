@@ -72,6 +72,7 @@
     // Ubuntu
     //
     // "java.home": "/usr/lib/jvm/java-8-oracle",
+    // "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
 
     // Check Project Settings Exclusions
     // Checks if the extension-generated project settings files
