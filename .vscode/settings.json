@@ -67,12 +67,12 @@
     // -------------------------------------------
 
     // Absolute path to your Java home directory
-    // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_192",
+    // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
     // Arch Linux   - "java.home": "/usr/lib/jvm/java-8-openjdk",
-    // Ubuntu
+    // Ubuntu       - "java.home": "/usr/lib/jvm/java-8-oracle",
+    // Ubuntu       - "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
     //
-    // "java.home": "/usr/lib/jvm/java-8-oracle",
-    // "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
 
     // Check Project Settings Exclusions
     // Checks if the extension-generated project settings files
