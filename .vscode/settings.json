@@ -87,7 +87,7 @@
 
     // Python > Testing : Unittest Enabled
     // Enable testing using unittest
-    "python.testing.unittestEnabled": true,
+    "python.testing.unittestEnabled": false,
 
     // Python > Testing : Pytest Enabled
     // Enable testing using pytest
