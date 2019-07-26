@@ -79,11 +79,15 @@
     // (.project, .classpath, .factorypath, .settings/)
     // should be excluded from the file explorer.
     //
-    // "java.configuration.checkProjectSettingsExclusions": false,
+    "java.configuration.checkProjectSettingsExclusions": false,
 
     // -------------------------------------------
     // Python
     // -------------------------------------------
+
+    // Python > Testing : Pytest Enabled
+    // Enable testing using pytest
+    "python.testing.pytestEnabled": true,
 
     // Data Science: Send Selection To Interactive Window
     //
