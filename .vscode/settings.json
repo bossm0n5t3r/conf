@@ -85,9 +85,13 @@
     // Python
     // -------------------------------------------
 
+    // Python > Testing : Unittest Enabled
+    // Enable testing using unittest
+    "python.testing.unittestEnabled": true,
+
     // Python > Testing : Pytest Enabled
     // Enable testing using pytest
-    "python.testing.pytestEnabled": true,
+    "python.testing.pytestEnabled": false,
 
     // Data Science: Send Selection To Interactive Window
     //
