@@ -1,7 +1,7 @@
 {
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Editor
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // Controls the font family.
     "editor.fontFamily": "'D2Coding'",
@@ -12,9 +12,9 @@
     // Controls whether the editor should render indent guides.
     "editor.renderIndentGuides": false,
 
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Workbench
-    // -------------------------------------------
+    // -----------------------------------------------------------
     
     // Startup Editor
     //
@@ -31,18 +31,18 @@
     // Specifies the color theme used in the workbench.
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
     
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Extensions
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // When enabled, recommendations will not be fetched or
     // shown unless specifically requested by the user.
     // Some recommendations are fetched from a Microsoft online service.
     "extensions.showRecommendationsOnlyOnDemand": true,
 
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Power Mode
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // Enable to activate POWER MODE!!!
     "powermode.enabled": true,
@@ -50,9 +50,9 @@
     // Set to false to disable shaking while typing
     "powermode.enableShake": false,
 
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Git
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // When enabled, commits will automatically be fetched
     // from the default remote of the current Git repository.
@@ -62,9 +62,9 @@
     // Confirm before synchronizing git repositories
     "git.confirmSync": false,
 
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Java configuration
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // Absolute path to your Java home directory
     // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
@@ -81,9 +81,9 @@
     //
     "java.configuration.checkProjectSettingsExclusions": false,
 
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Python
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // Python > Testing : Unittest Enabled
     // Enable testing using unittest
@@ -91,7 +91,7 @@
 
     // Python > Testing : Pytest Enabled
     // Enable testing using pytest
-    "python.testing.pytestEnabled": false,
+    "python.testing.pytestEnabled": true,
 
     // Data Science: Send Selection To Interactive Window
     //
@@ -100,9 +100,9 @@
     //
     // "python.dataScience.sendSelectionToInteractiveWindow": true,
 
-    // -------------------------------------------
+    // -----------------------------------------------------------
     // Run Code configuration
-    // -------------------------------------------
+    // -----------------------------------------------------------
 
     // Whether to clear previous output before each run.
     "code-runner.clearPreviousOutput": true,
