@@ -26,6 +26,11 @@
     // (only opening an empty workspace).
     "workbench.startupEditor": "none",
     
+    // Icon Theme
+    //
+    // Specifies the icon theme used in the workbench or 'null' to not show any file icons.
+    "workbench.iconTheme": "vscode-icons",
+
     // Color Theme
     //
     // Specifies the color theme used in the workbench.
