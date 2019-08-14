@@ -1,129 +1,35 @@
 {
-    // -----------------------------------------------------------
-    // Editor
-    // -----------------------------------------------------------
-
-    // Controls the font family.
     "editor.fontFamily": "'D2Coding'",
-
-    // Controls the font size in pixels.
     "editor.fontSize": 17,
-    
-    // Controls whether the editor should render indent guides.
-    "editor.renderIndentGuides": false,
-    
-    // Detect Indentation
+    "editor.tabSize": 4,
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
     "editor.detectIndentation": false,
-    
-    // -----------------------------------------------------------
-    // Workbench
-    // -----------------------------------------------------------
-    
-    // Startup Editor
-    //
-    // Controls which editor is shown at startup,
-    // if none is restored from the previous session.
-    // Select 'none' to start without an editor,
-    // 'welcomePage' to open the Welcome page (default),
-    // 'newUntitledFile' to open a new untitled file
-    // (only opening an empty workspace).
     "workbench.startupEditor": "none",
-    
-    // Icon Theme
-    //
-    // Specifies the icon theme used in the workbench or 'null' to not show any file icons.
     "workbench.iconTheme": "vscode-icons",
-
-    // Color Theme
-    //
-    // Specifies the color theme used in the workbench.
     "workbench.colorTheme": "Material Theme Ocean High Contrast",
-    
-    // -----------------------------------------------------------
-    // Extensions
-    // -----------------------------------------------------------
-
-    // When enabled, recommendations will not be fetched or
-    // shown unless specifically requested by the user.
-    // Some recommendations are fetched from a Microsoft online service.
     "extensions.showRecommendationsOnlyOnDemand": true,
-
-    // -----------------------------------------------------------
-    // Power Mode
-    // -----------------------------------------------------------
-
-    // Enable to activate POWER MODE!!!
     "powermode.enabled": true,
-
-    // Set to false to disable shaking while typing
     "powermode.enableShake": false,
-
-    // -----------------------------------------------------------
-    // Git
-    // -----------------------------------------------------------
-
-    // When enabled, commits will automatically be fetched
-    // from the default remote of the current Git repository.
     "git.autofetch": true,
-
-    // Confirm Sync
-    // Confirm before synchronizing git repositories
     "git.confirmSync": false,
-
-    // -----------------------------------------------------------
-    // Java configuration
-    // -----------------------------------------------------------
-
-    // Absolute path to your Java home directory
     // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
     // Arch Linux   - "java.home": "/usr/lib/jvm/java-8-openjdk",
     // Ubuntu       - "java.home": "/usr/lib/jvm/java-8-oracle",
     // Ubuntu       - "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
-    //
     "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
-
-    // Check Project Settings Exclusions
-    // Checks if the extension-generated project settings files
-    // (.project, .classpath, .factorypath, .settings/)
-    // should be excluded from the file explorer.
-    //
     "java.configuration.checkProjectSettingsExclusions": false,
-
-    // -----------------------------------------------------------
-    // Python
-    // -----------------------------------------------------------
-
-    // Python > Testing : Unittest Enabled
-    // Enable testing using unittest
     "python.testing.unittestEnabled": false,
-
-    // Python > Testing : Pytest Enabled
-    // Enable testing using pytest
     "python.testing.pytestEnabled": true,
-
-    // Data Science: Send Selection To Interactive Window
-    //
-    // Determines if selected code in a python file will go
-    // to the terminal or the Python Interactive window when hitting shift+enter
-    //
-    // "python.dataScience.sendSelectionToInteractiveWindow": true,
-
-    // -----------------------------------------------------------
-    // Run Code configuration
-    // -----------------------------------------------------------
-
-    // Whether to clear previous output before each run.
     "code-runner.clearPreviousOutput": true,
-
-    // Set the executor of each language.
     "code-runner.executorMap": {
         "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
         "python": "python",
     },
-
-    // Whether to run code in Integrated Terminal.
     "code-runner.runInTerminal": true,
-
-    // Whether to save the current file before running.
     "code-runner.saveFileBeforeRun": true,
 }
