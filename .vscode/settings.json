@@ -1,9 +1,10 @@
 {
     "editor.fontFamily": "'D2Coding'",
     "editor.fontSize": 17,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "[javascript]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "[json]": {
         "editor.tabSize": 2
