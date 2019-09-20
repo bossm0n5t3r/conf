@@ -1,39 +1,48 @@
 {
-    "editor.fontFamily": "'D2Coding'",
-    "editor.fontSize": 17,
+  "editor.fontFamily": "'D2Coding'",
+  "editor.fontSize": 20,
+  "editor.tabSize": 2,
+  "[java]": {
+    "editor.tabSize": 4
+  },
+  "[javascript]": {
     "editor.tabSize": 2,
-    "[javascript]": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[json]": {
-        "editor.tabSize": 2
-    },
-    "[markdown]": {
-        "editor.tabSize": 2
-    },
-    "editor.detectIndentation": false,
-    "workbench.startupEditor": "none",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Material Theme Ocean High Contrast",
-    "extensions.showRecommendationsOnlyOnDemand": true,
-    "powermode.enabled": true,
-    "powermode.enableShake": false,
-    "git.autofetch": true,
-    "git.confirmSync": false,
-    // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
-    // Arch Linux   - "java.home": "/usr/lib/jvm/java-8-openjdk",
-    // Ubuntu       - "java.home": "/usr/lib/jvm/java-8-oracle",
-    // Ubuntu       - "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
-    "java.configuration.checkProjectSettingsExclusions": false,
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "code-runner.clearPreviousOutput": true,
-    "code-runner.executorMap": {
-        "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
-        "python": "python",
-    },
-    "code-runner.runInTerminal": true,
-    "code-runner.saveFileBeforeRun": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.tabSize": 2
+  },
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "editor.detectIndentation": false,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Material Theme Ocean High Contrast",
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "powermode.enabled": true,
+  "powermode.enableShake": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // Windows      - "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
+  // Arch Linux   - "java.home": "/usr/lib/jvm/java-8-openjdk",
+  // Ubuntu       - "java.home": "/usr/lib/jvm/java-8-oracle",
+  // Ubuntu       - "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
+  "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "python.testing.unittestEnabled": false,
+  "python.jediEnabled": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "java": "cd $dir && javac -encoding utf-8 $fileName && java $fileNameWithoutExt",
+    "python": "python",
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
