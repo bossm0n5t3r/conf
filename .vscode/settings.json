@@ -34,6 +34,7 @@
   // Ubuntu       - "java.home": "/usr/lib/jvm/java-12-openjdk-amd64",
   "java.home": "C:\\Program Files\\Java\\jdk1.8.0_221",
   "java.configuration.checkProjectSettingsExclusions": false,
+  "java.errors.incompleteClasspath.severity": "ignore",
   "python.testing.unittestEnabled": false,
   "python.jediEnabled": false,
   "code-runner.clearPreviousOutput": true,
