@@ -16,12 +16,16 @@ silent! if plug#begin('~/.vim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentline'
+Plug 'fwcd/kotlin-language-server'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'sirver/ultisnips'
+Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'fatih/vim-go'
+Plug 'plasticboy/vim-markdown'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'honza/vim-snippets'
 
@@ -88,6 +92,12 @@ let g:UltiSnipsEditSplit="vertical"
 " vim-airline
 
 let g:airline#extensions#tabline#enabled = 1
+
+" -------------------------------------------------------------------------
+
+" vim-markdown
+
+let g:vim_markdown_new_list_item_indent = 2
 
 " -------------------------------------------------------------------------
 
