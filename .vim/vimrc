@@ -17,6 +17,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
 Plug 'yggdroot/indentline'
 Plug 'fwcd/kotlin-language-server'
+Plug 'udalov/kotlin-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
@@ -97,6 +98,7 @@ let g:airline#extensions#tabline#enabled = 1
 
 " vim-markdown
 
+let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_new_list_item_indent = 2
 
 " -------------------------------------------------------------------------
