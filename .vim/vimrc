@@ -17,7 +17,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf'
 Plug 'junegunn/goyo.vim'
-Plug 'yggdroot/indentline'
 Plug 'fwcd/kotlin-language-server'
 Plug 'udalov/kotlin-vim'
 Plug 'scrooloose/nerdcommenter'
@@ -27,6 +26,7 @@ Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go'
+Plug 'nathanaelkane/vim-indent-guides'
 Plug 'plasticboy/vim-markdown'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'honza/vim-snippets'
@@ -208,13 +208,6 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 " -------------------------------------------------------------------------
 
-" Indentline
-
-let g:indentLine_leadingSpaceEnabled = 1
-let g:indentLine_leadingSpaceChar = '·'
-
-" -------------------------------------------------------------------------
-
 " NERD Commenter
 
 " Add spaces after comment delimiters by default
@@ -250,6 +243,12 @@ let g:syntastic_check_on_wq = 0
 " vim-airline
 
 let g:airline#extensions#tabline#enabled = 1
+
+" -------------------------------------------------------------------------
+
+" vim-indent-guides
+
+let g:indent_guides_enable_on_vim_startup = 1
 
 " -------------------------------------------------------------------------
 
@@ -324,6 +323,7 @@ set backspace=indent,eol,start
 set encoding=utf-8
 set mouse=a
 set clipboard=unnamed
+set conceallevel=0
 
 " =========================================================================
 " MAPPINGS
